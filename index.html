@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Ing. Nattier Caraballo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --uneti-blue: #0056b3; }
+        body { background-color: #f8f9fa; scroll-behavior: smooth; padding-top: 80px; font-family: 'Segoe UI', sans-serif; }
+        
+        /* Header Delgado e Institucional */
+        .header-uneti { 
+            background-color: var(--uneti-blue); 
+            color: white; 
+            padding: 10px 0; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000; 
+        }
+        .nav-link { 
+            color: white !important; 
+            font-weight: bold; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            margin: 0 5px;
+        }
+        .nav-link:hover, .nav-link.active { background: rgba(255,255,255,0.2); border-radius: 4px; }
+
+        /* Secciones */
+        section { padding: 80px 0; min-height: 100vh; border-bottom: 1px solid #ddd; }
+        
+        /* Contenedor Motor IA Nattier */
+        .ia-wrapper { 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            overflow: hidden; 
+            height: 650px; 
+            border: 2px solid var(--uneti-blue);
+        }
+        iframe { width: 100%; height: 100%; border: none; }
+        
+        .footer-uneti { background-color: var(--uneti-blue); color: white; padding: 30px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header class="header-uneti shadow-sm">
+        <div class="container text-center">
+            <div class="small fw-bold mb-1">UNETI - TRAYECTO IV</div>
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#perfil">Perfil</a>
+                <a class="nav-link" href="#portafolio">Portafolio</a>
+                <a class="nav-link" href="#admin">Admin</a>
+                <a class="nav-link" href="#motor-ia" style="border: 1px solid white; border-radius: 4px;">Motor IA</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="text-center d-flex flex-column justify-content-center">
+            <h1 class="display-4 fw-bold text-primary">Portafolio Profesional Híbrido</h1>
+            <h2 class="text-secondary">Ing. Nattier Caraballo</h2>
+            <p class="lead mt-3">Proyecto Académico: Diseño de Página Web Básica con Integración de IA [cite: 6]</p>
+        </section>
+
+        <section id="perfil">
+            <h3 class="border-bottom pb-2 mb-4 text-primary text-uppercase">Perfil Profesional [cite: 40]</h3>
+            <div class="card p-4 shadow-sm">
+                <h4 class="fw-bold">Ing. Nattier Caraballo</h4>
+                <p><strong>Institución:</strong> UNETI [cite: 15]</p>
+                <p><strong>Unidad Curricular:</strong> Programando con IA [cite: 16]</p>
+                <p class="mt-2 text-justify">Ingeniero en Informática dedicada al desarrollo de soluciones tecnológicas con IA para la gestión de Sprints y desarrollo[cite: 20].</p>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <h3 class="mb-4 text-primary text-uppercase">Portafolio de Proyectos [cite: 56]</h3>
+            <div class="accordion shadow-sm" id="accUneti">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+                            Fase 2: Estructura Semántica HTML5 [cite: 52]
+                        </button>
+                    </h2>
+                    <div id="c1" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Implementación de componentes dinámicos y navegación centralizada[cite: 25].
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="admin">
+            <h3 class="text-primary mb-4 text-uppercase">Panel de Administración [cite: 76]</h3>
+            <div class="card p-4 shadow-sm" style="border-left: 5px solid var(--uneti-blue);">
+                <h5 class="fw-bold">Gestión de Sprints - UNETI [cite: 81]</h5>
+                <hr>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" checked disabled>
+                    <label class="form-check-label">Fase 1: Estructura y Logos [cite: 82]</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" checked disabled>
+                    <label class="form-check-label">Fase 2: HTML5 Semántico [cite: 83]</label>
+                </div>
+                <button class="btn btn-primary w-100 mt-3" onclick="alert('Información actualizada exitosamente')">GUARDAR CAMBIOS [cite: 88]</button>
+            </div>
+        </section>
+
+        <section id="motor-ia">
+            <h3 class="text-primary fw-bold mb-4 text-center">🤖 Motor de Inteligencia Artificial Nattier</h3>
+            <div class="ia-wrapper">
+                <iframe src="https://ia-nattier-uneti.netlify.app/"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-uneti text-center">
+        <div class="container">
+            <p><strong>Autor:</strong> Ing. Nattier Caraballo</p>
+            <p>UNETI - Trayecto IV | © 2026 [cite: 15, 9]</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
